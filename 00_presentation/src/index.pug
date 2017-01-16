@@ -35,3 +35,60 @@ html(lang="en")
               li.fragment Multiplayer
               li.fragment Networking
               li.fragment Reinventing the wheel
+        section
+          section
+            h2 Game dev 101
+          section
+            h3 Game Loop
+            ul
+              li.fragment Lifecycle of your game
+              li.fragment Runs every "frame"
+          section
+            h3 Input
+              ul
+                li.fragment Handles all player interaction
+                li.fragment Mouse, Keyboard, Touch, Gamepad, ...
+          section
+            h3 Physics
+              ul
+                li.fragment From simple to real world
+                li.fragment Collision detection
+          section
+            h3 Scene Graph
+            ul
+              li.fragment Tree shaped
+              li.fragment Contains all entities of your scene/level
+          section
+            h3 Scene / Level / States
+            ul
+              li.fragment Helps to structure your application
+              li.fragment Seperates game states
+          section
+            h3 Example
+            img(src=require("./assets/game-states.gif"), width="40%")
+            br
+            i (by yaldex.com)
+          section
+            h3 Camera
+            ul
+              li.fragment Viewport that is used to render your scene
+              li.fragment Eye of your player
+              li.fragment Orthogonal in 2D
+          section
+            h3 Sprite
+            ul
+              li.fragment 2D Rectangle
+              li.fragment Facing the camera
+              li.fragment Usually showing a texture
+              li.fragment May be animated using a spritesheet
+          section
+            h3 Particle effect
+            ul
+              li.fragment Lot's of sprites combined
+            br
+            iframe.fragment(
+              src="http://examples.phaser.io/embed.php?f=particlestorm/hsv+colors.js&v=2.4.4.particlestorm"
+              style="width: 80%; height: 500px"
+            )
+          section
+            h3 And many more ;)
