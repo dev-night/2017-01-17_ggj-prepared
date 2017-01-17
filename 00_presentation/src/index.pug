@@ -120,3 +120,43 @@ html(lang="en")
               src="http://html5gameengine.com/"
               style="width: 80%; height: 500px"
             )
+        section
+          section
+            a(href="http://phaser.io/")
+              img(src=require("./assets/phaser-logo.png")).no-decoration
+            br
+            i Desktop and mobile HTML5 game framework
+            br
+            a(href="http://phaser.io/") phaser.io
+          section
+            h3 Why Phaser
+            ul
+              li.fragment Well documented
+              li.fragment Web + Mobile
+              li.fragment Easy to use
+              li.fragment Feature rich
+                table
+                  tr
+                    td WebGL
+                    td Input
+                    td Sound
+                  tr
+                    td Physics
+                    td Animations
+                    td Scene graph
+                  tr
+                    td Preloader
+                    td Particles
+                    td Tilemaps
+          section
+            h3 Samples
+            a(href="http://phaser.io/examples/v2/games/breakout" target="_blank") Breakout
+          section
+            h3 Minimal Code Snippet
+            pre
+              code
+                include ./snippet.js
+            p.fragment.current-only(data-code-focus="1") Engine init
+            p.fragment.current-only(data-code-focus="3-4") Preload handler
+            p.fragment.current-only(data-code-focus="6-7") Scene init
+            p.fragment.current-only(data-code-focus="9-10") Game loop
