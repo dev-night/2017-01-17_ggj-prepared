@@ -1,0 +1,181 @@
+doctype html
+html(lang="en")
+  head
+    title /dev/night 17.01.2017
+  body
+    .reveal
+      .slides
+        section
+          img(src=require("./assets/dev_night-logo.png")).no-decoration
+          h3 17.01.2017
+        section
+          img(src=require("./assets/ggj-logo.png"))
+          h3 20.01 - 22.01.2017
+          a(href="http://tradebyte.com/ggj") tradebyte.com/ggj
+        section
+          section
+            h2 General Advice
+          section
+            h3 Dos
+            ul
+              li.fragment Keep it simple
+              li.fragment
+                | Think
+                strike  big
+                |  small
+              li.fragment 2D
+              li.fragment Use game engines
+              li.fragment Work in teams of 4-5 people
+              li.fragment Communicate
+              li.fragment Sleep / Eat / Drink
+          section
+            h3 Don'ts (Avoid)
+            ul
+              li.fragment 3D
+              li.fragment Multiplayer
+              li.fragment Networking
+              li.fragment Reinventing the wheel
+        section
+          section
+            h2 Game Dev 101 (2D)
+          section
+            h3 Game Loop
+            ul
+              li.fragment Lifecycle of your game
+              li.fragment Runs every "frame"
+          section
+            h3 Input
+            ul
+              li.fragment Handles all player interaction
+              li.fragment Mouse, Keyboard, Touch, Gamepad, ...
+          section
+            h3 Physics
+            ul
+              li.fragment From simple to real world
+              li.fragment Collision detection
+          section
+            h3 Scene Graph
+            ul
+              li.fragment Tree shaped
+              li.fragment Contains all entities of your scene/level
+          section
+            h3 Scene / Level / States
+            ul
+              li.fragment Helps to structure your application
+              li.fragment Seperates game states
+          section
+            h3 Example
+            img(src=require("./assets/game-states.gif"), width="40%")
+            br
+            i (by yaldex.com)
+          section
+            h3 Camera
+            ul
+              li.fragment Viewport that is used to render your scene
+              li.fragment Eye of your player
+              li.fragment Orthogonal in 2D
+          section
+            h3 Sprite
+            ul
+              li.fragment 2D Rectangle
+              li.fragment Facing the camera
+              li.fragment Usually showing a texture
+              li.fragment May be animated using a spritesheet
+          section
+            h3 Particle effect
+            ul
+              li.fragment Lot's of sprites combined
+            br
+            iframe.fragment(
+              src="http://examples.phaser.io/embed.php?f=particlestorm/hsv+colors.js&v=2.4.4.particlestorm"
+              style="width: 80%; height: 500px"
+            )
+          section
+            h3 And many more ;)
+        section
+          section
+            h2 Game Engines
+          section
+            h3 Criteria
+            ul
+              li.fragment Features
+              li.fragment Toolset (Editor, Profiler, ...)
+              li.fragment License model
+              li.fragment Target platforms
+          section
+            h3 Some Engines
+            ul
+              li.fragment Unreal
+              li.fragment Unity
+              li.fragment Source
+              li.fragment Cryengine
+              li.fragment Panda3D
+              li.fragment
+               | HTML 5
+               br
+               a(href="http://html5gameengine.com/") html5gameengine.com
+          section
+            h3 HTML5 Game Enginges
+            iframe(
+              src="http://html5gameengine.com/"
+              style="width: 80%; height: 500px"
+            )
+        section
+          section
+            a(href="http://phaser.io/")
+              img(src=require("./assets/phaser-logo.png")).no-decoration
+            br
+            i Desktop and mobile HTML5 game framework
+            br
+            a(href="http://phaser.io/") phaser.io
+          section
+            h3 Why Phaser
+            ul
+              li.fragment Well documented
+              li.fragment Web + Mobile
+              li.fragment Easy to use
+              li.fragment Feature rich
+                table
+                  tr
+                    td WebGL
+                    td Input
+                    td Sound
+                  tr
+                    td Physics
+                    td Animations
+                    td Scene graph
+                  tr
+                    td Preloader
+                    td Particles
+                    td Tilemaps
+          section
+            h3 Samples
+            a(href="http://phaser.io/examples/v2/games/breakout" target="_blank") Breakout
+          section
+            h3 Minimal Code Snippet
+            pre
+              code
+                include ./snippet.js
+            p.fragment.current-only(data-code-focus="1") Engine init
+            p.fragment.current-only(data-code-focus="3-4") Preload handler
+            p.fragment.current-only(data-code-focus="6-7") Scene init
+            p.fragment.current-only(data-code-focus="9-10") Game loop
+        section
+          section
+            h3 Challenges
+            ul
+              li.fragment Flappy Birds
+              li.fragment Asteroids
+              li.fragment Snake
+              li.fragment Pong
+              li.fragment Space Invaders
+              li.fragment
+                | 1 Key jump
+                a(href="chrome://network-error/-106")  (chrome://network-error/-106)
+              li.fragment Your Idea
+          section
+            h3 Bonus
+            ul
+              li.fragment Cross platform
+              li.fragment Optimized build process
+              li.fragment Typescript
