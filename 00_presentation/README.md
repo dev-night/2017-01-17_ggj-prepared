@@ -1,5 +1,4 @@
-# reveal.js boilerplate
-A boilerplate project for reveal.js using webpack and jade.
+# Presentation
 
 ## Requirements
 * Node.js
